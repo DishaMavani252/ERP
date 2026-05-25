@@ -37,7 +37,7 @@ type = "multi_line_text_field"
 api_version = "2026-07"
 
   [[webhooks.subscriptions]]
-  uri = "/webhooks/app/uninstalled"
+  uri = "/webhooks/app/webhooks.app.uninstalled.jsx"
   topics = [ "app/uninstalled" ]
 
   [[webhooks.subscriptions]]
@@ -45,15 +45,15 @@ api_version = "2026-07"
   topics = [ "app/scopes_update" ]
 
   [[webhooks.subscriptions]]
-  uri = "/webhooks/products/create"
+  uri = "/webhooks/products/webhooks.products.create.jsx"
   topics = [ "products/create" ]
 
   [[webhooks.subscriptions]]
-  uri = "/webhooks/products/update"
+  uri = "/webhooks/products/webhooks.products.update.jsx"
   topics = [ "products/update" ]
 
   [[webhooks.subscriptions]]
-  uri = "/webhooks/products/delete"
+  uri = "/webhooks/products/webhooks.products.delete.jsx"
   topics = [ "products/delete" ]
 
 [auth]
