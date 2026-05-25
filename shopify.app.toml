@@ -37,7 +37,7 @@ type = "multi_line_text_field"
 api_version = "2026-07"
 
   [[webhooks.subscriptions]]
-  uri = "/webhooks/app/webhooks.app.uninstalled.jsx"
+  uri = "/webhooks/app/uninstalled"
   topics = [ "app/uninstalled" ]
 
   [[webhooks.subscriptions]]
@@ -45,20 +45,19 @@ api_version = "2026-07"
   topics = [ "app/scopes_update" ]
 
   [[webhooks.subscriptions]]
-  uri = "/webhooks/products/webhooks.products.create.jsx"
+  uri = "/webhooks/products/create"
   topics = [ "products/create" ]
 
   [[webhooks.subscriptions]]
-  uri = "/webhooks/products/webhooks.products.update.jsx"
+  uri = "/webhooks/products/update"
   topics = [ "products/update" ]
 
   [[webhooks.subscriptions]]
-  uri = "/webhooks/products/webhooks.products.delete.jsx"
+  uri = "/webhooks/products/delete"
   topics = [ "products/delete" ]
 
 [auth]
 redirect_urls = [ "https://erp-production-bb66.up.railway.app/api/auth" ]
 
 [build]
-include_config_on_deploy = true
 automatically_update_urls_on_dev = true
