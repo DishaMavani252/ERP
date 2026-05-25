@@ -57,7 +57,7 @@ api_version = "2026-07"
   topics = [ "products/delete" ]
 
 [auth]
-redirect_urls = [ "https://YOUR-APP.up.railway.app/api/auth" ]
+redirect_urls = [ "https://erp-production-bb66.up.railway.app/api/auth" ]
 
 [build]
 include_config_on_deploy = true
