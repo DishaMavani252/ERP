@@ -28,7 +28,7 @@ const shopify = shopifyApp({
     async afterAuth({ session }) {
       console.log("✅ afterAuth fired for shop:", session.shop);
       console.log("🔑 accessToken present:", !!session.accessToken);
-
+      console.log("REGISTERING WEBHOOKS");
       try {
         await saveShop(session.shop, session.accessToken);
         await shopify.registerWebhooks({ session });
