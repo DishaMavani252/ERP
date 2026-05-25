@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "bf01748ea12cc7d4b923366a9f9d9bbf"
-application_url = "https://YOUR-APP.up.railway.app"
+application_url = "https://erp-production-bb66.up.railway.app"
 embedded = true
 name = "ERP System"
 
