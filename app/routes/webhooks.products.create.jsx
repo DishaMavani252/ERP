@@ -4,6 +4,7 @@ import { syncProductToERP } from "../services/erp.server";
 import { saveProductMapping } from "../models/productMapping.server";
 
 export const action = async ({ request }) => {
+    console.log("PRODUCTION WEBHOOK HIT............");
     const { topic, shop, payload } = await authenticate.webhook(request);
     console.log("Success Disha------------Webhook received ....");
     try {
